@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kickboxing RJ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #f8f9fa;
+            margin: 0; /* Removendo margem padrão */
+            padding-bottom: 50px; /* Adicionando espaço para o rodapé */
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Kickboxing RJ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#modalidades">Modalidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Corpo -->
+    <div class="container mt-4">
+
+        <!-- Sobre -->
+        <section id="sobre">
+            <h2 class="mb-3">Sobre</h2>
+            <p>O Kickboxing RJ é um centro de treinamento especializado em artes marciais, oferecendo aulas para todas as
+                idades e níveis de habilidade.</p>
+        </section>
+
+        <!-- Modalidades -->
+        <section id="modalidades" class="mt-5">
+            <h2 class="mb-3">Modalidades</h2>
+            <p>Nossas modalidades incluem além do Kickboxing tradicional, Muay Thai, Boxe e Treinamento Funcional.</p>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="mt-5">
+            <h2 class="mb-3">Contato</h2>
+            <p>Para mais informações ou para agendar uma aula experimental, entre em contato conosco através do e-mail
+                contato@kickboxingrj.com.</p>
+        </section>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            &copy; <span id="anoAtual"></span> Kickboxing RJ
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Obtém o ano atual e atualiza o rodapé
+        document.getElementById('anoAtual').innerText = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
